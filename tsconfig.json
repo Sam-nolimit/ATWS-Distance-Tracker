@@ -5,6 +5,7 @@
     "baseUrl": ".env", // this must be specified if "paths" is specified.
     "paths": {
       "@env": ["node_modules/env"] // this mapping is relative to "baseUrl"
+      
     }
   }
 }
