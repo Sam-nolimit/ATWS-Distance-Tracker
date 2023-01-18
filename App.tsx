@@ -29,7 +29,6 @@ const INITIAL_POSTION = {
   longitudeDelta: LONGITUDE_DELTA,
 };
 
-
 type InputAutoComplete = {
   label: string;
   placeholder: string;
@@ -51,7 +50,7 @@ function InputAutoComplete({
         placeholder={placeholder || ""}
         fetchDetails
         onPress={(data, details = null) => {
-        onPlaceSelected(details);
+          onPlaceSelected(details);
         }}
         query={{
           key: GOOGLE_API_KEY,
@@ -156,10 +155,10 @@ export default function App() {
         </TouchableOpacity>
         {distance && duration ? (
           <View>
-            <Text style={{ fontWeight: "500", fontSize: 12 }}>
+            <Text style={{ fontWeight: "500", fontSize: 15, marginTop: 10 }}>
               Distance: {distance.toFixed(2)} km
             </Text>
-            <Text style={{ fontWeight: "500", fontSize: 12, marginTop: 5 }}>
+            <Text style={{ fontWeight: "500", fontSize: 15, marginTop: 5 }}>
               Duration: {Math.ceil(duration)} mins
             </Text>
           </View>
