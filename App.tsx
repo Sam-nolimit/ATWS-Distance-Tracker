@@ -29,6 +29,7 @@ const INITIAL_POSTION = {
   longitudeDelta: LONGITUDE_DELTA,
 };
 
+
 type InputAutoComplete = {
   label: string;
   placeholder: string;
